@@ -1,0 +1,158 @@
+@import "izitoast/dist/css/iziToast.min.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  font-family: 'Roboto', sans-serif;
+  color: #2e2e2e;
+  background-color: #fafafa;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+form {
+  width: 360px;
+}
+
+.delay-label {
+  margin-bottom: 8px;
+}
+
+.delay {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  outline: transparent;
+  color: #2e2f42;
+  background-color: transparent;
+}
+
+.delay-input:hover {
+  border-color: #000000;
+}
+
+.delay-input:focus {
+  border-color: #4e75ff;
+}
+
+label,
+legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+legend {
+  letter-spacing: 0.04em;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 48px;
+  padding-top: 24px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin: 24px 0 24px 0;
+}
+
+fieldset:hover {
+  border: 1px solid #000000;
+}
+
+.radio-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+}
+
+.custom-radio {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #757575;
+}
+
+.custom-radio:hover {
+  border-color: #000000;
+}
+
+.custom-radio::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-color: #4e75ff;
+}
+
+.radio-btn:checked + .custom-radio {
+  border-color: #4e75ff;
+}
+
+.radio-btn:checked + .custom-radio::after {
+  opacity: 1;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
